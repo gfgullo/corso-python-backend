@@ -1,0 +1,17 @@
+{% import "user_info.html" as user_info_view %}
+
+<html>
+    <head>
+        <title>Flask JINJA2</title>
+    </head>
+
+    <body>
+    {% if user %}
+        <h1>Hello {{user | capitalize}} by JINJA2</h1>
+        {{user_info_view.render_info(user_info)}}
+    {% else %}
+        <h1>It seems I don't know you</h1>
+    {% endif %}
+    </body>
+
+</html>

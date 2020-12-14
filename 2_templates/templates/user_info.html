@@ -1,0 +1,7 @@
+{% macro render_info(user_info) %}
+<ul>
+        {% for info in user_info %}
+            <li>{{info}}</li>
+        {% endfor %}
+</ul>
+{% endmacro %}
